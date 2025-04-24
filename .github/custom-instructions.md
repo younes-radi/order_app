@@ -1,32 +1,43 @@
-# Copilot Custom Instructions
+# Custom Instructions for GitHub Copilot
 
-- Project overview  
-  The repo contains a standalone Python application for processing customer orders and payments offline, targeted at small‐to‐medium businesses.
+This project involves implementing a standalone application for order and payment processing, tailored for small to medium-sized businesses. The application must meet the functional and non-functional requirements outlined in the specification. Please follow these custom instructions to guide the implementation in Python:
 
-- Code style  
-  • Follow PEP 8 conventions.  
-  • Use type hints on all functions and methods.  
+1. **Frameworks and Libraries**:
+   - Use **Flask** for the backend to handle user management, order processing, and reporting.
+   - Use **SQLAlchemy** for database interactions and ORM.
+   - For the frontend, integrate with **Jinja2** templates or suggest lightweight alternatives.
 
-- Testing  
-  • Prefer pytest for all unit tests.  
+2. **Database**:
+   - Design the database schema based on the provided Entity-Relationship (ER) diagram.
+   - Use **SQLite** for offline capability, ensuring easy portability.
 
-- Dependencies  
-  • Manage dependencies via a `requirements.txt` file.  
+3. **Authentication and Security**:
+   - Implement user authentication with **Flask-Login**.
+   - Encrypt user credentials using **bcrypt** or similar libraries.
+   - Ensure session management includes a 15-minute timeout.
 
-- Documentation  
-  • Generate Google‑style docstrings for public APIs.  
+4. **Performance**:
+   - Optimize order processing to meet the requirement of completing transactions in under 1 second.
+   - Ensure the dashboard loads within 2 seconds by caching frequently accessed data.
 
-- Environment setup  
-  • Do not presume or suggest creation of a virtual environment.  
+5. **Reporting**:
+   - Generate reports in **PDF** using libraries like **ReportLab** and **CSV** using Python's built-in `csv` module.
 
-- Scaffolding  
-  • Do not scaffold a CLI entry point unless explicitly requested.  
+6. **Backup and Restore**:
+   - Implement database backup and restore functionality using Python's **shutil** module.
 
-- Configuration  
-  • Keep config and core logic in the same module (no enforced separation).  
+7. **Testing**:
+   - Write unit tests for all critical functionalities using **pytest**.
+   - Include integration tests for user workflows like order creation and payment processing.
 
-- Logging  
-  • Do not assume any particular logging library or format.  
+8. **Code Quality**:
+   - Follow **PEP 8** guidelines for Python code style.
+   - Ensure modularity and documentation for maintainability.
 
-- Comments  
-  • Insert inline comments to explain complex business logic.  
+9. **Offline Capability**:
+   - Ensure the application can function without an internet connection by avoiding external dependencies during runtime.
+
+10. **Deployment**:
+    - Provide instructions for deploying the application on Windows, macOS, and Linux.
+
+These instructions should guide Copilot to generate Python code that aligns with the project's requirements and best practices.

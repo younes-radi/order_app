@@ -75,6 +75,6 @@ These define how the system should perform or behave.
 ## 4. Diagrams
 
 ### 4.1 Entity-Relationship (ER) Diagram
-![ER Diagram](assets/Entity-Relationship_(ER)_diagram.svg)
+![ER Diagram](assets/entity_relationship_diagram.png)
 the diagram is in this path :
-C:\Users\younes.radi\copilot\spec_usecase\assets\Entity-Relationship_(ER)_diagram.png
+assets/entity_relationship_diagram.png
