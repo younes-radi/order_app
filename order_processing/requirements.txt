@@ -1,0 +1,7 @@
+# Order Processing Application Dependencies
+PyQt5       # For GUI implementation
+# SQLite3 is included in Python's standard library, no need to install separately
+bcrypt       # For password hashing (security)
+reportlab    # For generating PDF reports
+pandas       # For data manipulation and CSV exports
+pytest   # For unit testing
